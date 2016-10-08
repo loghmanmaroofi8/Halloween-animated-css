@@ -1,0 +1,25 @@
+.spirit {
+	width: 250px;
+	height: 200px;
+	position: absolute;
+	background: transparent url(img/spirit.png) 0 0 no-repeat;
+	left: -500px;
+	}
+	
+	.fcloud01 {
+	top: 22px;
+	z-index: 100;
+	animation: drift 25s linear infinite;
+
+	}
+			
+	.fcloud02 {
+	top: 140px;
+	z-index: 200;
+	animation: drift 35s 10s linear infinite backwards;
+	}
+
+@keyframes drift {
+	from{transform: translateX(-255px);}
+	to {transform: translateX(1350px);}
+}
